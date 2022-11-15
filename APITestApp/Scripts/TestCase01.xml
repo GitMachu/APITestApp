@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script scriptname="TestCase01">
+  <step stepnumber="1">
+    <requesttype>GET request</requesttype>
+    <parameters></parameters>
+  </step>
+  <step stepnumber="2">
+    <requesttype>Assertion - statuscode</requesttype>
+    <parameters>200 OK</parameters>
+  </step>
+  <step stepnumber="3">
+    <requesttype>Assertion - count</requesttype>
+    <parameters>10</parameters>
+  </step>
+</script>

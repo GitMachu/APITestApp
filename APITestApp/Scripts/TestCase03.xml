@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script scriptname="TestCase03">
+  <step stepnumber="1">
+    <requesttype>POST request</requesttype>
+    <parameters>name=Test name&amp;username=TestNamer&amp;email=TestEmail@email.com</parameters>
+  </step>
+  <step stepnumber="2">
+    <requesttype>Assertion - statuscode</requesttype>
+    <parameters>201 Created</parameters>
+  </step>
+  <step stepnumber="3">
+    <requesttype>Assertion - specificrecord</requesttype>
+    <parameters>name=Test name</parameters>
+  </step>
+  <step stepnumber="4">
+    <requesttype>Assertion - specificrecord</requesttype>
+    <parameters>username=TestNamer</parameters>
+  </step>
+  <step stepnumber="5">
+    <requesttype>Assertion - specificrecord</requesttype>
+    <parameters>email=TestEmail@email.com</parameters>
+  </step>
+</script>
