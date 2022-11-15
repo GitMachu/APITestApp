@@ -50,7 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.chkAppendToURL = new System.Windows.Forms.CheckBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSteps)).BeginInit();
@@ -311,7 +310,6 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(77)))), ((int)(((byte)(149)))));
-            this.panel9.Controls.Add(this.chkAppendToURL);
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.btnSave);
@@ -322,18 +320,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(700, 490);
             this.panel9.TabIndex = 26;
-            // 
-            // chkAppendToURL
-            // 
-            this.chkAppendToURL.AutoSize = true;
-            this.chkAppendToURL.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAppendToURL.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.chkAppendToURL.Location = new System.Drawing.Point(431, 13);
-            this.chkAppendToURL.Name = "chkAppendToURL";
-            this.chkAppendToURL.Size = new System.Drawing.Size(250, 25);
-            this.chkAppendToURL.TabIndex = 24;
-            this.chkAppendToURL.Text = "Append parameters to URL";
-            this.chkAppendToURL.UseVisualStyleBackColor = true;
             // 
             // panel10
             // 
@@ -383,7 +369,6 @@
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.ResumeLayout(false);
@@ -415,7 +400,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox chkAppendToURL;
     }
 }
 

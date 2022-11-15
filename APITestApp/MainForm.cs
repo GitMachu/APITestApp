@@ -96,7 +96,7 @@ namespace APITestApp
             int maxWidth = 0;
             foreach (var obj in cmb.Items)
             {
-                int temporaryWidth = TextRenderer.MeasureText(obj.ToString(), cmb.DefaultCellStyle.Font).Width;
+                int temporaryWidth = TextRenderer.MeasureText(obj.ToString(), new Font("Microsoft Sans Serif", 8F)).Width;
                 if (temporaryWidth > maxWidth)
                 {
                     maxWidth = temporaryWidth;
@@ -144,17 +144,10 @@ namespace APITestApp
             if (hasParameters)
             {
                 convertedParameters = RequestLibrary.ConvertParameters(actionParameters);
-                if (appendParametersToURL)
-                {
-                    subURL = subURL + "?" + BuildParameterURLString(convertedParameters);
-                    subURL.Replace(" ", "%20");
-                    CommonFunctions.LogMessage("Append parameters to URL enabled", true);
-                    CommonFunctions.LogMessage("New resource URL: " + subURL, true);
-                }
             }
             RestClient client = new RestClient(URL);
             RestRequest request = new RestRequest(subURL, actionType.Contains("GET") ? Method.Get : Method.Post);
-            if (hasParameters && !appendParametersToURL)
+            if (hasParameters)
             {
                 foreach (KeyValuePair<string, string> parameterPair in convertedParameters)
                 {
@@ -446,7 +439,6 @@ namespace APITestApp
                 return;
             }
             btnRun.Enabled = false;
-            appendParametersToURL = chkAppendToURL.Checked;
             stepTable = new DataTable();
             foreach (DataGridViewColumn col in dgvSteps.Columns)
             {
