@@ -252,6 +252,11 @@ namespace APITestApp
         {
             tvwScripts.Nodes.Clear();
             var rootDirectory = new DirectoryInfo(path);
+            if (!Directory.Exists(path))
+            {
+                MessageBox.Show("The Scripts folder is missing. An empty folder will be created.", "Script folder missing", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Directory.CreateDirectory(path);
+            }
             foreach (var directory in rootDirectory.GetDirectories())
             {
                 var stack = new Stack<TreeNode>();
