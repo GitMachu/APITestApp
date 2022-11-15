@@ -157,15 +157,9 @@
     <Content Include="Scripts\SaveYourScriptsHere.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\TestCase01.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Scripts\TestCase02.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Scripts\TestCase03.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Scripts\01_GetAllUsers.xml" />
+    <Content Include="Scripts\02_Get8thUserAndVerifyName.xml" />
+    <Content Include="Scripts\03_PostAndVerifyResponse.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
