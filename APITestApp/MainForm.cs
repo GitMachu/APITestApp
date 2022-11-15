@@ -147,6 +147,7 @@ namespace APITestApp
                 if (appendParametersToURL)
                 {
                     subURL = subURL + "?" + BuildParameterURLString(convertedParameters);
+                    subURL.Replace(" ", "%20");
                     CommonFunctions.LogMessage("Append parameters to URL enabled", true);
                     CommonFunctions.LogMessage("New resource URL: " + subURL, true);
                 }
