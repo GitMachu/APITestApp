@@ -157,9 +157,15 @@
     <Content Include="Scripts\SaveYourScriptsHere.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\TestCase01.xml" />
-    <Content Include="Scripts\TestCase02.xml" />
-    <Content Include="Scripts\TestCase03.xml" />
+    <Content Include="Scripts\TestCase01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\TestCase02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\TestCase03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
