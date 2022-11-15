@@ -160,7 +160,6 @@
     <Content Include="Scripts\TestCase01.xml" />
     <Content Include="Scripts\TestCase02.xml" />
     <Content Include="Scripts\TestCase03.xml" />
-    <Content Include="UITester.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
