@@ -424,6 +424,7 @@ namespace APITestApp
                 resultsForm.Show();
                 CommonFunctions.ManualExecutionStop = false;
                 CommonFunctions.HasPendingLogText = false;
+                btnRun.Enabled = true;
                 executionWorker.Dispose();
             });
             executionWorker.RunWorkerAsync();
@@ -444,6 +445,7 @@ namespace APITestApp
                 MessageBox.Show("One of the steps has an invalid value. Please remove all instances of \"--SELECT--\" in all step dropdowns.", "Invalid step value", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            btnRun.Enabled = false;
             appendParametersToURL = chkAppendToURL.Checked;
             stepTable = new DataTable();
             foreach (DataGridViewColumn col in dgvSteps.Columns)
